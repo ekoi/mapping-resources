@@ -14,5 +14,4 @@ originalfield,metadatablock,metadatafield,id,subfield,level,type
 "/Dataontwerpversies/Versie/Dataontwerp/Procesverloop",socialscience,socialScienceNotes,0,socialScienceNotesSubject,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/VerkorteSchrijfwijzeNaamVariabele",odissei,variable,1,variableName,0,primitive
 "/Dataontwerpversies/Versie/Dataontwerp/Contextvariabelen/Contextvariabele/LabelVanDeVariabele",odissei,variable,1,variableLabel,0,primitive
-"/Dataontwerpversies/Versie/Pid",citation,datasetPersistentId,1,doi,0,primitive
 
