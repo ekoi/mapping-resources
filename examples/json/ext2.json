@@ -1,169 +1,194 @@
 {"datasetVersion": {"metadataBlocks": {
     "citation": {
-                "displayName": "Citation Metadata",
-                "name": "citation",
-                "fields": [
-                    {
-                        "typeName": "title",
+        "displayName": "Citation Metadata",
+        "name": "citation",
+        "fields": [
+            {
+                "typeName": "title",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Test Title Citation"
+            },
+            {
+                "typeName": "alternativeTitle",
+                "typeClass": "primitive",
+                "multiple": false,
+                "value": "alternativeTitle Agrarische dienstverlening"
+            },
+            {
+                "typeName": "otherId",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [
+                    {"otherIdAgency": {
+                        "typeName": "otherIdAgency",
                         "multiple": false,
                         "typeClass": "primitive",
-                        "value": "Test Title Citation"
-                    },
+                        "value": "ABC Dataontwerp ID"
+                    }},
+                    {"otherIdValue": {
+                        "typeName": "otherIdValue",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "abcdefghijklmn"
+                    }}
+                ]
+            },
+            {
+                "typeName": "author",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [
                     {
-                        "typeName": "author",
-                        "multiple": true,
-                        "typeClass": "compound",
-                        "value": [
-                            {
-                                "authorName": {
-                                    "typeName": "authorName",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "Lama, Imka K."
-                                },
-                                "authorAffiliation": {
-                                    "typeName": "authorAffiliation",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
-                                }
-                            },
-                            {
-                                "authorName": {
-                                    "typeName": "authorName",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "Atir, Oke I."
-                                },
-                                "authorAffiliation": {
-                                    "typeName": "authorAffiliation",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
-                                }
-                            },
-                            {
-                                "authorName": {
-                                    "typeName": "authorName",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "Awajimub, Laget J."
-                                },
-                                "authorAffiliation": {
-                                    "typeName": "authorAffiliation",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
-                                }
-                            },
-                            {
-                                "authorName": {
-                                    "typeName": "authorName",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "Asinnuriahk, Lama"
-                                },
-                                "authorAffiliation": {
-                                    "typeName": "authorAffiliation",
-                                    "multiple": false,
-                                    "typeClass": "primitive",
-                                    "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
-                                }
-                            }
-                        ]
-                    },
-                    {
-                        "typeName": "datasetContact",
-                        "multiple": true,
-                        "typeClass": "compound",
-                        "value": [{
-                            "datasetContactName": {
-                                "typeName": "datasetContactName",
-                                "multiple": false,
-                                "typeClass": "primitive",
-                                "value": "Verhage, Matthijs"
-                            },
-                            "datasetContactAffiliation": {
-                                "typeName": "datasetContactAffiliation",
-                                "multiple": false,
-                                "typeClass": "primitive",
-                                "value": "Anuv"
-                            }
-                        }]
-                    },
-                    {
-                        "typeName": "dsDescription",
-                        "multiple": true,
-                        "typeClass": "compound",
-                        "value": [{"dsDescriptionValue": {
-                            "typeName": "dsDescriptionValue",
+                        "authorName": {
+                            "typeName": "authorName",
                             "multiple": false,
                             "typeClass": "primitive",
-                            "value": "doftne distinct properties in vitro, but this Y-, in vitro."
-                        }}]
-                    },
-                    {
-                        "typeName": "subject",
-                        "multiple": true,
-                        "typeClass": "controlledVocabulary",
-                        "value": ["Medicine, Health and Life Sciences"]
-                    },
-                    {
-                        "typeName": "keyword",
-                        "multiple": true,
-                        "typeClass": "compound",
-                        "value": [{"keywordValue": {
-                            "typeName": "keywordValue",
+                            "value": "Lama, Imka K."
+                        },
+                        "authorAffiliation": {
+                            "typeName": "authorAffiliation",
                             "multiple": false,
                             "typeClass": "primitive",
-                            "value": "Neuroscience"
-                        }}]
+                            "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
+                        }
                     },
                     {
-                        "typeName": "publication",
-                        "multiple": true,
-                        "typeClass": "compound",
-                        "value": [{
-                            "publicationCitation": {
-                                "typeName": "publicationCitation",
-                                "multiple": false,
-                                "typeClass": "primitive",
-                                "value": "abcdef\nJas P. Rome, Fas H. Mor, Tony F. Robbert, Vars Jam\nbioRxiv 2012.1i.08.53196; doi: https://doi.org/10.212/2021.08.08.4543"
-                            },
-                            "publicationIDType": {
-                                "typeName": "publicationIDType",
-                                "multiple": false,
-                                "typeClass": "controlledVocabulary",
-                                "value": "doi"
-                            },
-                            "publicationIDNumber": {
-                                "typeName": "publicationIDNumber",
-                                "multiple": false,
-                                "typeClass": "primitive",
-                                "value": "https://doi.org/10.432/2012.08.08.543"
-                            },
-                            "publicationURL": {
-                                "typeName": "publicationURL",
-                                "multiple": false,
-                                "typeClass": "primitive",
-                                "value": "https://www.biorxiv.org/content/10.789/2020.10.08.563196v1"
-                            }
-                        }]
+                        "authorName": {
+                            "typeName": "authorName",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "Atir, Oke I."
+                        },
+                        "authorAffiliation": {
+                            "typeName": "authorAffiliation",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
+                        }
                     },
                     {
-                        "typeName": "depositor",
-                        "multiple": false,
-                        "typeClass": "primitive",
-                        "value": "Lama, Imka Akm"
+                        "authorName": {
+                            "typeName": "authorName",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "Awajimub, Laget J."
+                        },
+                        "authorAffiliation": {
+                            "typeName": "authorAffiliation",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
+                        }
                     },
                     {
-                        "typeName": "dateOfDeposit",
-                        "multiple": false,
-                        "typeClass": "primitive",
-                        "value": "2022-02-22"
+                        "authorName": {
+                            "typeName": "authorName",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "Asinnuriahk, Lama"
+                        },
+                        "authorAffiliation": {
+                            "typeName": "authorAffiliation",
+                            "multiple": false,
+                            "typeClass": "primitive",
+                            "value": "dfgc(CNCR), vabcdef, db, 1087, ghij, The Netherlands"
+                        }
                     }
                 ]
             },
+            {
+                "typeName": "datasetContact",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [{
+                    "datasetContactName": {
+                        "typeName": "datasetContactName",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "Verhage, Matthijs"
+                    },
+                    "datasetContactAffiliation": {
+                        "typeName": "datasetContactAffiliation",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "Anuv"
+                    }
+                }]
+            },
+            {
+                "typeName": "dsDescription",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [{"dsDescriptionValue": {
+                    "typeName": "dsDescriptionValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "doftne distinct properties in vitro, but this Y-, in vitro."
+                }}]
+            },
+            {
+                "typeName": "subject",
+                "multiple": true,
+                "typeClass": "controlledVocabulary",
+                "value": ["Medicine, Health and Life Sciences"]
+            },
+            {
+                "typeName": "keyword",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [{"keywordValue": {
+                    "typeName": "keywordValue",
+                    "multiple": false,
+                    "typeClass": "primitive",
+                    "value": "Neuroscience"
+                }}]
+            },
+            {
+                "typeName": "publication",
+                "multiple": true,
+                "typeClass": "compound",
+                "value": [{
+                    "publicationCitation": {
+                        "typeName": "publicationCitation",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "abcdef\nJas P. Rome, Fas H. Mor, Tony F. Robbert, Vars Jam\nbioRxiv 2012.1i.08.53196; doi: https://doi.org/10.212/2021.08.08.4543"
+                    },
+                    "publicationIDType": {
+                        "typeName": "publicationIDType",
+                        "multiple": false,
+                        "typeClass": "controlledVocabulary",
+                        "value": "doi"
+                    },
+                    "publicationIDNumber": {
+                        "typeName": "publicationIDNumber",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "https://doi.org/10.432/2012.08.08.543"
+                    },
+                    "publicationURL": {
+                        "typeName": "publicationURL",
+                        "multiple": false,
+                        "typeClass": "primitive",
+                        "value": "https://www.biorxiv.org/content/10.789/2020.10.08.563196v1"
+                    }
+                }]
+            },
+            {
+                "typeName": "depositor",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "Lama, Imka Akm"
+            },
+            {
+                "typeName": "dateOfDeposit",
+                "multiple": false,
+                "typeClass": "primitive",
+                "value": "2022-02-22"
+            }
+        ]
+    },
     "socialscience": {"fields": [{
         "typeName": "frequencyOfDataCollection",
         "typeClass": "primitive",
