@@ -8,12 +8,14 @@
     <!-- template for the first tag -->
     <xsl:template match="map"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:variable name="doi-preffix" select="10.80227"/>
+        <xsl:variable name="other-id" select="//map[@key='citation']/array[@key='fields']/map/array[@key='value']/map/map[@key='otherIdValue']/string[@key='typeName' and text()='otherIdValue']//following-sibling::string[@key='value']/."/>
         <xsl:variable name="title" select="//map[@key='citation']/array[@key='fields']/map/string[@key='typeName' and text()='title']//following-sibling::string[@key='value']/."/>
         <xsl:variable name="currentDate" select="current-date()"/>
         {
         "identifiers": [{
         "identifierType": "DOI",
-        "identifier": "10.80227/test-ODISSEI-zmf-2ke"
+        "identifier": "<xsl:value-of select="concat($doi-preffix,'/', $other-id)"/>"
         }],
         "creators": [
         <xsl:for-each select="//map[@key='citation']/array[@key='fields']/map/array[@key='value']/map/map[@key='authorName']">
