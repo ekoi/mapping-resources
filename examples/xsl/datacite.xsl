@@ -5,6 +5,11 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     exclude-result-prefixes="xs math" version="3.0">
     <xsl:output indent="yes" omit-xml-declaration="yes" />
+    <xsl:template match="data">
+		<!-- create a new root tag -->
+			<!-- apply the xml structure generated from JSON -->
+			<xsl:apply-templates select="json-to-xml(.)" />
+	</xsl:template>
     <!-- template for the first tag -->
     <xsl:template match="map"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
